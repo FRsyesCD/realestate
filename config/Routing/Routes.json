@@ -1,10 +1,99 @@
 [
     {
-        "action": "afficher_personnes",
-        "Controller": "PersonneController::Afficher"
+        "action": "login",
+        "Controller": "DefaultController::login"
     },
     {
-        "action": "/",
-        "Controller": "DefaultController::index"
+        "action": "logout",
+        "Controller": "DefaultController::logout"
+    },
+
+
+
+
+    {
+        "action": "property_list",
+        "Controller": "PropertyController::index"
+    },
+    {
+        "action": "add_property",
+        "Controller": "PropertyController::add"
+    },
+    {
+        "action": "edit_property",
+        "Controller": "PropertyController::edit"
+    },
+    {
+        "action": "delete_property",
+        "Controller": "PropertyController::delete"
+    },
+
+
+
+    {
+        "action": "agent_list",
+        "Controller": "AgentController::index"
+    },
+    {
+        "action": "add_agent",
+        "Controller": "AgentController::add"
+    },
+    {
+        "action": "edit_agent",
+        "Controller": "AgentController::edit"
+    },
+    {
+        "action": "delete_agent",
+        "Controller": "AgentController::delete"
+    },
+
+    
+
+
+
+    {
+        "action": "login_list",
+        "Controller": "UserController::index"
+    },
+    {
+        "action": "add_login",
+        "Controller": "UserController::add"
+    },
+    {
+        "action": "edit_login",
+        "Controller": "UserController::edit"
+    },
+    {
+        "action": "delete_login",
+        "Controller": "UserController::delete"
+    },
+
+
+
+
+
+
+    
+    {
+        "action": "propertyshop",
+        "Controller": "ShoppingController::index"
+    },
+    {
+        "action": "add_to_favorites",
+        "Controller": "ShoppingController::addToFavorites"
+    },
+    {
+        "action": "get_agent_infos",
+        "Controller": "ShoppingController::viewAgent"
+    },
+    
+    {
+        "action": "remove_favoris",
+        "Controller": "ShoppingController::removefavoris"
+    },
+    {
+        "action": "favoris",
+        "Controller": "ShoppingController::favoris"
     }
+    
 ]

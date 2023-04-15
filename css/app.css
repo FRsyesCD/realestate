@@ -1,0 +1,139 @@
+
+body {
+    background-color: #212529;
+    color: #ffffff;
+  }
+  
+  .card-dark h1, .card-dark h2, .card-dark h3, .card-dark h4, .card-dark h5, .card-dark h6 {
+    color: #ffffff;
+  }
+  
+  .card-dark a {
+    color: #ffffff;
+  }
+  
+  .card-dark a:hover {
+    color: #cccccc;
+  }
+  .card-dark {
+    background-color: #343a40; /* Change this to the dark background color you prefer */
+    color: #ffffff; /* Change this to the text color you prefer */
+  }
+    
+  .side-menu {
+    position: fixed;
+    min-height: 100vh;
+    width: 250px;
+    padding: 20px 0;
+    background-color: #343a40;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+  }
+  
+  .side-menu.active {
+    transform: translateX(0);
+  }
+  
+  .main-content {
+    margin-left: 100px;
+    transition: all 0.3s ease;
+  animation: fadeIn 1s ease;
+  }
+  
+  .main-content.collapsed {
+    margin-left: 300px;
+  }
+  
+  .username {
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-left: 15px;
+  }
+  
+  .nav-link {
+    color: #ffffff;
+    background-color: #495057;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    padding: 10px 15px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #cccccc;
+    background-color: #343a40;
+    transform: translateX(5px);
+  }
+  
+  .table {
+    background-color: #343a40;
+  }
+  
+  .table th,
+  .table td {
+    color: #ffffff;
+  }
+  
+  .table-hover tbody tr:hover {
+    background-color: #495057;
+  }
+  
+  .menu-toggle {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  color: #ffffff;
+  cursor: pointer;
+  z-index: 1000;
+  font-size: 24px; 
+  }
+  h3{
+  margin-left: 10px;
+  }
+  @keyframes fadeIn {
+  0% {
+  opacity: 0;
+  }
+  100% {
+  opacity: 1;
+  }
+  }
+  .sort-icon {
+  margin-left: 5px;
+  font-size: 0.8em;
+  vertical-align: middle;
+  }
+  th[data-type] {
+  cursor: pointer;
+  }
+  
+  .search-container {
+  position: relative;
+  }
+  
+  .search-input {
+  border-radius: 20px;
+  border: 1px solid #ced4da;
+  padding-right: 40px;
+  }
+  
+  .search-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  border-radius: 0 20px 20px 0;
+  background-color: #0d6efd;
+  border: 1px solid #0d6efd;
+  color: #ffffff;
+  transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  .search-btn:hover {
+  background-color: #0b5ed7;
+  border-color: #0b5ed7;
+  }
+  
